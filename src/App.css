@@ -1,38 +1,104 @@
-.App {
+header {
+  text-align: center;
+  width: 100%;
+}
+
+.header-title {
+  background-color: #273544;
+  color: white;
+  padding: 12px 0 20px 0;
+  font-size: 25px;
+}
+
+.drop-down-menu-controls {
+  background-color: #2B3E53;
+  padding: 8px 0 20px 0;
+}
+
+header input,
+header select {
+  margin-top: 15px;
+  padding: 12px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  min-width: 200px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f2f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  padding-top: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  flex: 1 10 calc(20% - 20px);
+  min-width: 180px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.movie-card img {
+  width: 80%;
+  height: 375px;
+  margin: 10px auto 15px auto;
+  display: block;
+  border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movie-card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.movie-card p {
+  margin: 15px 10px 15px 10px;
+  line-height: 2;
+}
+
+.blank-poster {
+  width: 80%;
+  height: 400px;
+  margin: 10px auto 15px auto;
+  background-color: #e0e0e0;
+  display: block;
+}
+
+footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+button {
+  background-color: cornflowerblue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
   color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: steelblue;
 }
