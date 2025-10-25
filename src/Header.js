@@ -15,11 +15,11 @@ const Header = ({ searchQuery, onSearchChange, sortBy, onSortChange }) => {
         <h1>Movie Explorer</h1>
       </div>
       <div className="drop-down-menu-controls">
-        <input 
-          type="text" 
+        <input
+          type="text"
           value={searchQuery}
           onChange={handleInputChange}
-          placeholder="Search for a movie..." 
+          placeholder="Search for a movie..."
         />
         <select value={sortBy} onChange={handleSelectChange}>
           <option value="popularity.desc">Sort by</option>

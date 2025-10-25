@@ -15,7 +15,7 @@ const MovieGrid = ({ movies }) => {
       {movies.map(movie => (
         <div key={movie.id} className="movie-card">
           <img 
-            src={movie.poster_path ? imageUrl + movie.poster_path : ''} 
+            src={movie.poster_path ? imageUrl + movie.poster_path : ''}
             alt={movie.title}
             className={movie.poster_path ? '' : 'blank-poster'}
           />
