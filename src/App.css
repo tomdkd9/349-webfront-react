@@ -12,29 +12,26 @@ header {
 
 .drop-down-menu-controls {
   background-color: #2B3E53;
-  padding: 8px 0 20px 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 
 header input,
 header select {
-  margin-top: 15px;
   padding: 12px 10px;
   font-size: 18px;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  min-width: 200px;
+  width: 215px;
+  height: 50px;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
   background-color: #f2f2f2;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .movies-container {
@@ -74,7 +71,7 @@ body {
 
 .blank-poster {
   width: 80%;
-  height: 400px;
+  height: 375px;
   margin: 10px auto 15px auto;
   background-color: #e0e0e0;
   display: block;
